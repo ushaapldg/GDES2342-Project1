@@ -1,0 +1,178 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Unna;
+  src: url(fonts/Unna/Unna-Regular.ttf);
+}
+
+@font-face {
+  font-family: CrimsonPro;
+  src: url(fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Kaisei Decol;
+  src: url(fonts/Kaisei_Decol/KaiseiDecol-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F6F2;
+  padding-top: 130px;
+}
+
+header {
+  background-color: #964F4C;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+
+  position: fixed;
+  top:  0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: Inter;
+  font-weight: 250;
+  text-transform: uppercase;
+}
+
+a{
+  margin: 0 30px;
+
+  color: #F7F6F2;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h2{
+    font-family: Unna;
+    font-weight: 300;
+}
+
+#mission-statement{
+    background-image: url(images/bordertown_exterior.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 250px;
+
+    margin: 20px 100px;
+    padding: 50px;
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    min-width: 200px;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+#mission-statement h2{
+    background-color: rgba(0, 0, 0, 0.15);
+
+    margin-bottom: 10px;
+
+    text-align: center;
+    color:#F7F6F2
+}
+
+#mission-statement p{
+    font-family: CrimsonPro;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: center;
+    color:#F7F6F2
+}
+
+.mission-statement-description{
+    background-color: rgba(0, 0, 0, 0.2);
+
+    max-width: 800px;
+    min-width: 200px;
+}
+
+#our-values{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 100px 100px;
+}
+
+.values-image{
+    width: 100%;
+    max-width: 650px;
+    min-width: 250px;
+
+    margin-right: 100px;
+}
+
+.values-photo{
+    width: 100%;
+}
+
+#our-values h2{
+    margin: 20px 0 20px 0;
+
+    font-size: 1.6em;
+    color: #363838;
+}
+
+.values-description{
+    display: flex;
+    flex-direction: column;
+
+    width: 550px;
+}
+
+.values-description p{
+    font-family: CrimsonPro;
+    font-size: 1.2em;
+    color: #363838
+}
+
+#our-story{
+    display: flex;
+
+    margin: 40px 0;
+}
+
+.story-photo{
+    width: 50%;
+    height: 490px;
+    overflow: hidden;
+}
+
+.story-photo img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s ease;
+}
+
+.story-photo img:hover{
+  opacity: 0.8;
+}

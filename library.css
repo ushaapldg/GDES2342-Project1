@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Unna;
+  src: url(fonts/Unna/Unna-Regular.ttf);
+}
+
+@font-face {
+  font-family: CrimsonPro;
+  src: url(fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Kaisei Decol;
+  src: url(fonts/Kaisei_Decol/KaiseiDecol-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  margin-bottom: 40px;
+
+  font-family: CrimsonPro;
+  font-size: 1.2em;
+  color:#363838;
+}
+
+h1{
+  margin-bottom: 20px;
+
+  font-family: Kaisei Decol;
+  font-size: 1.8em;
+  color:#363838;
+}
+
+body {
+  background-color: #F7F6F2;
+
+  height: 770px;
+  padding-top: 130px;
+}
+
+header {
+  background-color: #964F4C;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+
+  position: fixed;
+  top:  0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: Inter;
+  font-weight: 250;
+  text-transform: uppercase;
+}
+
+a{
+  margin: 0 30px;
+
+  color: #F7F6F2;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.library-photo{
+  background-color: #547453;
+
+  width: 700px;
+  height: 500px;
+
+  margin-right: 50px;
+}
+
+.photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  padding: 10px;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+
+  padding: 20px;
+}
+
+.reserve-button{
+  background-color: #547453;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+  width: 180px;
+
+  text-align: center;
+  font-family: CrimsonPro;
+  font-size: 1.2em;
+  color:#F7F6F2
+}
+
+.reserve-button:hover{
+  opacity: 90%;
+}

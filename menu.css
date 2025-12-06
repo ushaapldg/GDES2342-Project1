@@ -1,0 +1,174 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Unna;
+  src: url(fonts/Unna/Unna-Regular.ttf);
+}
+
+@font-face {
+  font-family: CrimsonPro;
+  src: url(fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Kaisei Decol;
+  src: url(fonts/Kaisei_Decol/KaiseiDecol-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, li{
+  font-family: CrimsonPro;
+  font-size: 1.1em;
+  color:#363838;
+}
+
+ul{
+  margin-left: 20px;
+
+}
+
+h1{
+  margin-bottom: 17px;
+
+  text-align: center;
+  font-family: Kaisei Decol;
+  font-size: 1.8em;
+  color:#363838;
+}
+
+h2{
+  margin-bottom: 10px;
+
+  font-family: Unna;
+  color:#363838;
+}
+
+h3{
+  margin: 4px 0 0 7px;
+
+  font-family: Unna;
+  font-weight: bold;
+  font-size: 1.3em;
+  color:#363838;
+}
+
+body {
+  background-color: #F7F6F2;
+
+  padding-top: 130px;
+}
+
+header {
+  background-color: #964F4C;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+
+  position: fixed;
+  top:  0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: Inter;
+  font-weight: 250;
+  text-transform: uppercase;
+}
+
+a{
+  margin: 0 30px;
+
+  color: #F7F6F2;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.menu-nav{
+  background-color: #547453;
+
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 400px;
+  width: 190px;
+}
+
+.menu-nav h3{
+  color: #F7F6F2;
+}
+
+.menu-nav a{
+  padding-left: 15px;
+
+  font-family: CrimsonPro;
+  font-size: 1.3em;
+  color: #F7F6F2;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 220px;
+}
+
+#popular, #espresso-drinks, #drip-coffee, #teas, #other-drinks, #food{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items{
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.menu-item{
+  border: solid black 1px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 310px;
+  height: 344px;
+
+  margin: 10px 10px 10px 0;
+}
+
+.drink-photo{
+  background-color: rgb(75, 96, 115);
+
+  position: relative;
+
+  height: 240px;
+}
+
+img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+
+  margin: 3px 7px;
+}
